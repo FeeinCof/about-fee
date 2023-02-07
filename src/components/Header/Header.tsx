@@ -27,10 +27,10 @@ const Header = () => {
         <nav className={styles.nav_mobile}>
           <ul className={styles.nav_links}>
             <li className="delay_0">
-              <a href="/about">about</a>
+              <Link href="/about">about</Link>
             </li>
             <li className="delay_2">
-              <a href="/awards">awards</a>
+              <Link href="/awards">awards</Link>
             </li>
           </ul>
           <hr className={styles.nav_hr}></hr>

@@ -1,5 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-import type { ReactElement } from "react";
+import { ReactElement } from "react";
 import Head from "next/head";
 import Default from "@/src/layouts/Default/Default";
 import styles from "./awards.module.css";
@@ -42,7 +41,8 @@ const Awards = () => {
           <br />
           <p className="sm_text">
             second prize in the city ranking for science and technology with
-            "Social network to share knowledge of learning English" - 2018
+            &quot;Social network to share knowledge of learning English&quot; -
+            2018
           </p>
           <p className="primary_text">as the main software developer</p>
         </div>
@@ -99,7 +99,8 @@ const Awards = () => {
           <br />
           <p className="sm_text">
             third prize in the city ranking for science and technology with
-            "Smart Home model using voice with Google Assistance" - 2019
+            &quot;Smart Home model using voice with Google Assistance&quot; -
+            2019
           </p>
           <p className="primary_text">as the main system developer</p>
         </div>
