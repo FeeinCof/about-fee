@@ -1,7 +1,9 @@
 import styles from "./LinesButton.module.css";
 import { useDebouncedCallback } from "use-debounce";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 const LinesButton = ({ onClick }: { onClick: () => void }) => {
+  const path: string = useRouter().pathname;
   const [isClose, setClose] = useState<boolean>(false);
   const [isClass, setClass] = useState<boolean>(false);
   const debounced = useDebouncedCallback(() => setClose(!isClose), 750);
@@ -17,6 +19,12 @@ const LinesButton = ({ onClick }: { onClick: () => void }) => {
     }
     return;
   };
+  useEffect(() => {
+    if (isClass || isClose) {
+      handleButton();
+    }
+  }, [path]);
+
   return (
     <div
       className={`${styles.lines_button} ${
