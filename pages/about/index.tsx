@@ -62,7 +62,12 @@ const About = () => {
             </p>
           </div>
           <div className={styles.inner}>
-            <Image src={image} className={styles.image} alt="LE TRONG TUAN" />
+            <Image
+              src={image}
+              className={styles.image}
+              alt="LE TRONG TUAN"
+              loading="lazy"
+            />
           </div>
         </div>
         <div className={styles.wrapper_column}>
