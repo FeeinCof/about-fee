@@ -10,7 +10,7 @@ import robodnic2 from "@/src/assets/images/robodnic_2.jpg";
 import robodnic3 from "@/src/assets/images/robodnic_3.jpg";
 import robodnic4 from "@/src/assets/images/robodnic_1.jpg";
 import smarthome1 from "@/src/assets/images/smarthome_1.jpg";
-import smarthome4 from "@/src/assets/images/smarthome_4.jpg";
+import smarthome4 from "@/src/assets/images/smarthome_4.JPG";
 
 function Awards() {
   return (
