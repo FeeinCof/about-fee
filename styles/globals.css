@@ -153,6 +153,14 @@ a {
   animation-delay: 0.2s;
 }
 
+.delay_5 {
+  animation-delay: 2s;
+}
+
+.delay_6 {
+  animation-delay: 3s;
+}
+
 .opacity0 {
   opacity: 0;
 }

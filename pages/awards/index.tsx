@@ -12,7 +12,7 @@ import robodnic4 from "@/src/assets/images/robodnic_1.jpg";
 import smarthome1 from "@/src/assets/images/smarthome_1.jpg";
 import smarthome4 from "@/src/assets/images/smarthome_4.jpg";
 
-const Awards = () => {
+function Awards() {
   return (
     <>
       <Head>
@@ -107,7 +107,7 @@ const Awards = () => {
       </main>
     </>
   );
-};
+}
 
 Awards.getLayout = function getLayout(Awards: ReactElement) {
   return <Default>{Awards}</Default>;

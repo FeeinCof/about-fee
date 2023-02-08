@@ -21,11 +21,11 @@ const About = () => {
             <p className={`sm_text opacity_animate opacity0 delay_0`}>
               Hi all!
             </p>
-            <p className={`primary_text opacity_animate opacity0 delay_1`}>
+            <p className={`primary_text opacity_animate opacity0 delay_0`}>
               Have a good day! 🌻
             </p>
             <br />
-            <p className={`primary_text opacity_animate opacity0 delay_2`}>
+            <p className={`primary_text opacity_animate opacity0 delay_5`}>
               LÊ TRỌNG TUẤN - FEE
             </p>
             <br />
