@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-import type { ReactElement } from "react";
+import { ReactElement } from "react";
 import Head from "next/head";
 import Default from "@/src/layouts/Default/Default";
 import styles from "./about.module.css";
 import Image from "next/image";
 import image from "@/src/assets/images/intro_image.jpg";
 import { InfoTag } from "@/src/components";
+import Link from "next/link";
 const About = () => {
   return (
     <>
@@ -15,6 +16,16 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Link
+        download="LETRONGTUAN_RESUME.pdf"
+        href="LETRONGTUAN_RESUME.pdf"
+        target="_blank"
+      >
+        <p className={`primary_text ${styles.resume}`}>
+          <span className={styles.resume_hidden_mobile}>DOWNLOAD</span> MY
+          RESUME
+        </p>
+      </Link>
       <main className="main">
         <div className={styles.wrapper}>
           <div className={`${styles.inner} ${styles.hi_container}`}>
@@ -28,7 +39,6 @@ const About = () => {
             <p className={`primary_text opacity_animate opacity0 delay_5`}>
               LÊ TRỌNG TUẤN - FEE
             </p>
-            <br />
             <br />
             <br />
           </div>

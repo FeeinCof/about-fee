@@ -52,7 +52,23 @@
   margin-bottom: 28px;
 }
 
+.resume {
+  border-bottom: 1px solid white;
+  padding: 0;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.resume_hidden_mobile {
+  display: none;
+}
+
 @media screen and (min-width: 690px) {
+  .resume_hidden_mobile {
+    display: inline;
+    letter-spacing: 1px;
+  }
   .hi_container {
     height: 70vh !important;
   }
