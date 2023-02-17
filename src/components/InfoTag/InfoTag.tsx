@@ -5,10 +5,12 @@ const InfoTag = ({
   contents,
   link = "",
   github = "",
+  visit,
 }: {
   contents: string[];
   link?: string;
   github?: string;
+  visit?: boolean;
 }) => {
   const clickHandle = (e: any) => {
     if (!link || e.target.localName == "svg") {
@@ -30,6 +32,7 @@ const InfoTag = ({
           </a>
         )}
       </div>
+      {visit && <div className={styles.visit}>click to visit</div>}
     </div>
   );
 };

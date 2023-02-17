@@ -122,6 +122,7 @@ const About = () => {
             ]}
             link={`https://courses-page-for-homer-greek.vercel.app/`}
             github={"https://github.com/FeeinCof/courses-page-for-Homer-Greek"}
+            visit
           />
           <InfoTag
             contents={[
@@ -131,14 +132,22 @@ const About = () => {
             ]}
             link="https://homebud.vercel.app/"
             github="https://github.com/FeeinCof/homebud"
+            visit
           />
         </div>
         <div className={styles.wrapper_column}>
           <h2 className={styles.inner_column_tilte}>Pet Projects</h2>
           <InfoTag
+            contents={["2.2023", "Fish page login UI using Nextjs", ""]}
+            link="https://fish-login-clone-to-next-js.vercel.app/"
+            github="https://github.com/FeeinCof/Fish-Login-clone-to-NextJS"
+            visit
+          />
+          <InfoTag
             contents={["12.2022", "Todo list using React", ""]}
             link="https://todo-list-sand-nine.vercel.app/"
             github="https://github.com/FeeinCof/todo-list"
+            visit
           />
         </div>
       </main>
