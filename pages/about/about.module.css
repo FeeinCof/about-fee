@@ -53,11 +53,14 @@
 }
 
 .resume {
+  z-index: 9;
   border-bottom: 1px solid white;
   padding: 0;
   position: fixed;
   top: 20px;
   left: 20px;
+  background-color: #00000030;
+  backdrop-filter: blur(12px);
 }
 
 .resume_hidden_mobile {
